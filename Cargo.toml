@@ -1,0 +1,41 @@
+[package]
+name = "bgi-stroked-fonts"
+description = "Borland Graphics Interface (BGI) stroked font data in pure Rust. Includes various font styles like bold, gothic, sans-serif, and script fonts for legacy graphics applications"
+keywords = ["fonts", "bgi", "graphics", "borland", "retro"]
+categories = ["graphics", "rendering", "multimedia"]
+license = "ZLIB"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "convert"
+path = "src/convert.rs"
+required-features = ["_convert"]
+
+[features]
+default = [
+    "bold",
+    "euro",
+    "goth",
+    "lcom",
+    "litt",
+    "sans",
+    "scri",
+    "simp",
+    "trip",
+    "tscr",
+]
+bold = []
+euro = []
+goth = []
+lcom = []
+litt = []
+sans = []
+scri = []
+simp = []
+trip = []
+tscr = []
+_convert = ["dep:regex"]
+
+[dependencies]
+regex = { version = "1.11.3", optional = true }
