@@ -34,13 +34,13 @@ The library includes the following font styles:
 Here are some examples of the available fonts:
 
 ### Gothic Font
-![Gothic Font Sample](docs/goth.png)
+![Gothic Font Sample](https://github.com/sunsided/bgi-stroked-fonts/raw/main/docs/goth.png)
 
 ### Small Font
-![Small Font Sample](docs/litt.png)
+![Small Font Sample](https://github.com/sunsided/bgi-stroked-fonts/raw/main/docs/litt.png)
 
 ### Simple Font
-![Simple Font Sample](docs/simp.png)
+![Simple Font Sample](https://github.com/sunsided/bgi-stroked-fonts/raw/main/docs/simp.png)
 
 ## Installation
 
