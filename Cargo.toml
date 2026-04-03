@@ -1,10 +1,13 @@
 [package]
 name = "bgi-stroked-fonts"
 description = "Borland Graphics Interface (BGI) stroked font data in pure Rust. Includes various font styles like bold, gothic, sans-serif, and script fonts for legacy graphics applications"
+homepage = "https://github.com/sunsided/bgi-stroked-fonts"
+repository = "https://github.com/sunsided/bgi-stroked-fonts"
 keywords = ["fonts", "bgi", "graphics", "borland", "retro"]
 categories = ["graphics", "rendering", "multimedia"]
+maintainer = "Markus Mayer <widemeadows@gmail.com>"
 license = "Zlib"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 
 [[bin]]
