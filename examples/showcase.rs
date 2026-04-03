@@ -152,6 +152,18 @@ fn main() {
     );
     invert_in_place(&mut buf);
     write_pgm(std::path::Path::new("tscr_demo_grid.pgm"), w, h, &buf).unwrap();
+
+    println!("\nGenerated PGM files:");
+    println!("  bold_demo_grid.pgm");
+    println!("  euro_demo_grid.pgm");
+    println!("  goth_demo_grid.pgm");
+    println!("  lcom_demo_grid.pgm");
+    println!("  litt_demo_grid.pgm");
+    println!("  sans_demo_grid.pgm");
+    println!("  simp_demo_grid.pgm");
+    println!("  scri_demo_grid.pgm");
+    println!("  trip_demo_grid.pgm");
+    println!("  tscr_demo_grid.pgm");
 }
 
 /// Write the buffer as a binary PGM file (no external deps).
