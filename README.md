@@ -42,6 +42,9 @@ Here are some examples of the available fonts:
 ### Simple Font
 ![Simple Font Sample](https://github.com/sunsided/bgi-stroked-fonts/raw/main/docs/simp.png)
 
+### Standard Galactic Alphabet
+![Standard Galactic Alphabet](https://github.com/sunsided/bgi-stroked-fonts/raw/main/docs/sga.png)
+
 ## Installation
 
 Add this to your `Cargo.toml`:

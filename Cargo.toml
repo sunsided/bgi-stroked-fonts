@@ -21,6 +21,7 @@ default = [
     "litt",
     "sans",
     "scri",
+    "sga",
     "simp",
     "trip",
     "tscr",
@@ -32,6 +33,7 @@ lcom = []
 litt = []
 sans = []
 scri = []
+sga = []
 simp = []
 trip = []
 tscr = []

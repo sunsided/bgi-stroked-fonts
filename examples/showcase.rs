@@ -1,6 +1,6 @@
 //! Simple 8-bit rasterization of BGI stroked glyphs (SDL_BGI-style) with grid layout + f32 scale.
 
-use bgi_stroked_fonts::{bold, euro, goth, lcom, litt, sans, scri, simp, trip, tscr};
+use bgi_stroked_fonts::{bold, euro, goth, lcom, litt, sans, scri, sga, simp, trip, tscr};
 use std::cmp::max;
 
 fn main() {
@@ -125,6 +125,20 @@ fn main() {
     invert_in_place(&mut buf);
     write_pgm(std::path::Path::new("scri_demo_grid.pgm"), w, h, &buf).unwrap();
 
+    // sga font demo (Standard Galactic Alphabet)
+    let (w, h, mut buf) = render_showcase_two_grids(
+        cols,
+        cell_padding_px,
+        row_gap_px,
+        s1,
+        s2,
+        &sga::SGA_WIDTH,
+        &sga::SGA_SIZE,
+        &sga::SGA,
+    );
+    invert_in_place(&mut buf);
+    write_pgm(std::path::Path::new("sga_demo_grid.pgm"), w, h, &buf).unwrap();
+
     // trip font demo
     let (w, h, mut buf) = render_showcase_two_grids(
         cols,
@@ -162,6 +176,7 @@ fn main() {
     println!("  sans_demo_grid.pgm");
     println!("  simp_demo_grid.pgm");
     println!("  scri_demo_grid.pgm");
+    println!("  sga_demo_grid.pgm");
     println!("  trip_demo_grid.pgm");
     println!("  tscr_demo_grid.pgm");
 }
