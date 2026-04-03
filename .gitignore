@@ -1,3 +1,5 @@
 /target
 /*.pgm
 /.task
+/*.ttf
+__pycache__/

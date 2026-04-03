@@ -29,5 +29,8 @@ pub mod simp;
 #[cfg(feature = "trip")]
 pub mod trip;
 
+#[cfg(feature = "sga")]
+pub mod sga;
+
 #[cfg(feature = "tscr")]
 pub mod tscr;
